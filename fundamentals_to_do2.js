@@ -17,3 +17,12 @@ function printReturn(numOne, numTwo){
     console.log(numOne);
     return numTwo;
 };
+
+// First Plus Length
+
+firstLength(["hello",6,2,7])
+
+function firstLength(arr){
+    const total = arr[0] + arr.length;
+    return total;
+}
