@@ -37,3 +37,15 @@ function greaterThan(arr){
         }
     }
 };
+
+// Greater Than Generalized
+
+greaterGeneralized([1]);
+
+function greaterGeneralized(arr){
+    for(var i=0; i<arr.length; i++){
+        if(arr[i]>arr[1]){
+            console.log(arr[i]);
+        }
+    }
+}
