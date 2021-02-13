@@ -31,11 +31,14 @@ function firstLength(arr){
 greaterThan([1,3,5,7,9,13]);
 
 function greaterThan(arr){
+    let count = 0;
     for(var i=0; i<arr.length; i++){
         if(arr[i]>arr[1]){
             console.log(arr[i]);
-        }
+            count += 1;
+        };
     }
+    return count;
 };
 
 // Greater Than Generalized
@@ -43,9 +46,12 @@ function greaterThan(arr){
 greaterGeneralized([1]);
 
 function greaterGeneralized(arr){
+    let count = 0
     for(var i=0; i<arr.length; i++){
         if(arr[i]>arr[1]){
             console.log(arr[i]);
-        }
-    }
+            count += 1;
+        };
+    };
+    return count;
 }
