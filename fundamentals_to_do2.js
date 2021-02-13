@@ -8,3 +8,12 @@ function countdown(num){
     };
     return newArr;
 };
+
+// Print & Return
+
+printReturn(3, 7);
+
+function printReturn(numOne, numTwo){
+    console.log(numOne);
+    return numTwo;
+};
