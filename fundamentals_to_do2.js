@@ -55,3 +55,18 @@ function greaterGeneralized(arr){
     };
     return count;
 }
+
+// length & Value
+
+lengthValue(4,4);
+
+function lengthValue(numOne, numTwo){
+    var newArr = []
+    for(var i=0; i<numOne; i++){
+        newArr.push(numTwo)
+    }
+    if(numOne == numTwo){
+        console.log("Jinx!")
+    }
+    return newArr
+}
