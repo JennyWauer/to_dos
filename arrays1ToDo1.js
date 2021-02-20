@@ -47,3 +47,17 @@ function removeAt(arr, num){
     console.log(arr)
     return temp
 }
+
+// Swap Pairs
+
+swapPairs([2,4,1,5])
+swapPairs([1,7,4,5,3])
+
+function swapPairs(arr){
+    for(var i=0; i<arr.length - 1; i+=2){
+        const temp = arr[i]
+        arr[i] = arr[i+1]
+        arr[i+1] = temp
+    }
+    return arr
+}
