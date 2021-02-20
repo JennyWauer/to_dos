@@ -20,8 +20,12 @@ function popFront(arr){
 
 // Insert At
 
-insertAt([3,4,1,7,8], 4, 2)
+insertAt([3,4,1,7,8], 3, 2)
 
 function insertAt(arr, index, num){
-
+    for(var i=arr.length-1; i>=index; i--){
+        arr[i+1] = arr[i]
+    }
+    arr[index] = num
+    return arr
 }
