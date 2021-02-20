@@ -15,7 +15,12 @@ function pushFront(arr, num){
 popFront([1,5,2,8,6])
 
 function popFront(arr){
-
+    var temp = arr[0]
+    for(var i=0; i<arr.length-1; i++){
+        arr[i-1] = arr[i]
+    }
+    console.log(arr)
+    return temp
 }
 
 // Insert At
@@ -28,4 +33,17 @@ function insertAt(arr, index, num){
     }
     arr[index] = num
     return arr
+}
+
+// Remove At
+
+removeAt([1,5,2,8,6], 3)
+
+function removeAt(arr, num){
+    var temp = arr[num]
+    for(var i=0; i<arr.length-1; i++){
+        arr[i-1] = arr[i]
+    }
+    console.log(arr)
+    return temp
 }
