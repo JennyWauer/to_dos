@@ -10,3 +10,14 @@ function reverse(arr){
     }
     return arr
 }
+
+// Rotate
+
+rotateArr([1,2,3],1)
+
+rotateArr(arr, num){
+    const temp = arr[arr.length - 1]
+    for(let i=0; i<arr.length; i++){
+        
+    }
+}
